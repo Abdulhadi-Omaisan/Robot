@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="ar" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arduino UNO R4 WIFI</title>
+    <link rel="stylesheet" href="../../style.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+       
+        :root {
+            --arduino-teal: #022223;
+        }
+        .bg-arduino-teal {
+            background-color: var(--arduino-teal);
+        }
+        .text-arduino-teal {
+            color: var(--arduino-teal);
+        }
+        
+        body {
+            font-family: 'Inter', 'Cairo', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-[#121212] text-[#e0e0e0]">
+
+    <div class="flex flex-col h-screen">
+        <header class="border-b bg-[#1e1e1e] border-[#333] shadow-sm sticky top-0 z-10">
+            <nav class="flex items-center justify-between h-16 px-4 md:px-6  main-nav">
+                
+                <div class="flex items-stretch h-full">
+                    <a href="/" class="flex items-center justify-center bg-arduino-teal px-4 text-white text-xl font-bold tracking-wider">
+                        ARDUINO
+                    </a>
+                    
+                </div>
+
+                <div class="logo-container">
+            <img src="img/logo.png">
+        </div>
+
+                <ul>
+                <li><a href="index.html">Ana Sayfa </a></li>
+                <li><a href="index.html">Hakkımızda </a></li>
+                <li><a href="index.html">İletişim </a></li>
+            </ul>
+            </nav>
+        </header>
+
+       
+        <div class="flex flex-1 overflow-hidden">
+
+            <aside class="w-64 bg-[#1e1e1e] border-l border-[#333] p-5 overflow-y-auto hidden md:block flex-shrink-0">
+
+                <h2 class="text-xl font-bold text-gray-100 mb-4">Legacy Documentation</h2>
+                
+                <nav>
+                    <ul>
+                        <li class="mb-2">
+                            <button class="flex items-center justify-between w-full font-semibold text-gray-300">
+                                Boards
+                               
+                            </button>
+                            <ul class="mt-2 ml-4 space-y-1 text-sm">
+                                <li>
+                                    <a href="R4WIFI.html" class="block px-3 py-2 rounded-md bg-blue-900 text-blue-200 font-semibold">Arduino UNO R4 WiFi</a>
+                                </li>
+                                <li>
+                                    <a href="../Unoatmega.html" class="block px-3 py-2 rounded-md text-gray-400 hover:bg-[#2a2a2a]">Arduino_UNO_ATmega328P</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-3 py-2 rounded-md text-gray-400 hover:bg-[#2a2a2a]">Arduino BT v1</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-3 py-2 rounded-md text-gray-400 hover:bg-[#2a2a2a]">Arduino Diecimila</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-3 py-2 rounded-md text-gray-400 hover:bg-[#2a2a2a]">Arduino Duemilanove</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-3 py-2 rounded-md text-gray-400 hover:bg-[#2a2a2a]">Arduino Esplora</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
+
+            
+            <main class="flex-1 p-8 md:p-12 overflow-y-auto" lang="en" dir="ltr">
+                <h1 class="text-4xl font-bold text-white mb-4">ARDUINO UNO R4 WiFi</h1>
+                
+                <p class="text-lg text-gray-300 leading-relaxed mb-8">
+Arduino UNO R4 WiFi, Renesas'ın 32 bit mikrodenetleyicisi RA4M1 etrafında tasarlanmıştır ve aynı zamanda Wi-Fi® ve Bluetooth® bağlantısı için bir ESP32 modülüne sahiptir. Kendine özgü 12x8 LED matrisi, görselleri doğrudan kart üzerinde prototiplemeyi mümkün kılar ve Qwiic konektörü ile tak-çalıştır tarzında projeler oluşturabilirsiniz.
+                
+                <figure class="max-w-3xl mx-auto mb-8">
+                    <img src="../../img/Arduino_UNO_R4_WiFi.png" 
+                         alt="[صورة للوحة Arduino 101]" 
+                         class="w-full rounded-lg shadow-lg border border-[#333]">
+                    <figcaption class="text-center text-gray-500 mt-3">
+                        https://docs.arduino.cc/resources/pinouts/ABX00087-full-pinout.pdf
+                    </figcaption>
+                </figure>
+
+              <!--  <article class="prose prose-invert max-w-none text-gray-300">
+                    <p>
+                    </p>
+                </article>  -->
+
+                <h1> Analoge pins: </h1>
+                <a>
+                <img src="../../img/R4WIFI-1.png" >  
+            </a>
+
+
+
+            <h1> Digitale pins:</h1>
+                <a>
+                <img src="../../img/R4WIFI-2.png" >  
+            </a>
+
+
+            <h1> ICSP pins:</h1>
+                <a>
+                <img src="../../img/R4WIFI-3.png" >  
+            </a>
+
+            
+
+
+                <nav class="flex space-x-8 border-b border-[#333] mb-6">
+                    <a href="#" class="py-4 px-1 text-white font-semibold border-b-2 border-arduino-teal">Teknik Özellikler</a>       
+                </nav>
+
+                <p class="text-gray-300 mb-10">Burada Arduino UNO R4 WiFi  teknik özelliklerini bulacaksınız</p>
+
+                <!-- قسم المواصفات الجديد -->
+                <div class="space-y-8">
+                    
+                    <!-- Board -->
+                    <div>
+                        <h2 class="text-2xl font-semibold text-white mb-4">Board</h2>
+                        <div class="border-t border-[#333]">
+                            <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-gray-400">Name</span>
+                                <span class="text-white">	Arduino® UNO R4 WiFi </span>
+                            </div>
+                            <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-gray-400">SKU</span>
+                                <span class="text-white">ABX00087 / ABX00087_CN / ABX00087_IN</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Microcontroller -->
+                    <div>
+                        <h2 class="text-2xl font-semibold text-white mb-4">Microcontroller</h2>
+                        <div class="border-t border-[#333]">
+                            <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">Renesas RA4M1 (Arm® Cortex®-M4)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h2 class="text-2xl font-semibold text-white mb-4">Radio Module</h2>
+                        <div class="border-t border-[#333]">
+                            <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">ESP32-S3-MINI-1-N8</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- USB connector -->
+                    <div>
+                        <h2 class="text-2xl font-semibold text-white mb-4">USB connector</h2>
+                        <div class="border-t border-[#333]">
+                            <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">Programming Port</span>
+                            </div>
+                        </div>
+                    </div> 
+                    <div>
+                        <h2 class="text-2xl font-semibold text-white mb-4">Pins</h2>
+                        <div class="border-t border-[#333]">
+                            <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">Digital I/O Pins</span>
+                                <span class="text-white">14</span>    
+                            </div>
+                            <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">Analog input pins</span>
+                                <span class="text-white">6</span>    
+                            </div>
+                            <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">DAC</span>
+                                <span class="text-white">1</span>    
+                            </div>
+                             <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">PWM pins</span>
+                                <span class="text-white">6</span>    
+                            </div>
+                             <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">External interrupts</span>
+                                <span class="text-white">2-3</span>    
+                            </div>
+                        </div>
+                    </div> 
+                     <div>
+                        <h2 class="text-2xl font-semibold text-white mb-4">Communication</h2>
+                        <div class="border-t border-[#333]">
+                            <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">UART</span>
+                                <span class="text-white">Yes 1x</span>    
+                            </div>
+                            <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">I2C</span>
+                                <span class="text-white">Yes 1x</span>    
+                            </div>
+                            <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">SPI</span>
+                                <span class="text-white">Yes 1x</span>    
+                            </div>
+                             <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">CAN</span>
+                                <span class="text-white">Yes 1x CAN Bus</span>    
+                            </div>
+                            
+                        </div>
+                    </div> 
+
+                    <div>
+                        <h2 class="text-2xl font-semibold text-white mb-4">Power</h2>
+                        <div class="border-t border-[#333]">
+                            <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">Circuit operating voltage</span>
+                                <span class="text-white"> (ESP32-S3 is 3.3 V)</span>    
+                            </div>
+                            <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">Input voltage (VIN)</span>
+                                <span class="text-white">6-24 V</span>    
+                            </div>
+                            <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">DC Current per I/O Pin</span>
+                                <span class="text-white">8 mA</span>    
+                            </div>
+                        </div>
+                    </div> 
+
+                    <div>
+                        <h2 class="text-2xl font-semibold text-white mb-4">Clock speed</h2>
+                        <div class="border-t border-[#333]">
+                            <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">RA4M1</span>
+                                <span class="text-white">48 MHz</span>    
+                            </div>
+                            <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">ESP32-S3-MINI-1-N8</span>
+                                <span class="text-white">up to 240 MHz</span>    
+                            </div>
+                        </div>
+                    </div> 
+
+                    <div>
+                        <h2 class="text-2xl font-semibold text-white mb-4">Memory</h2>
+                        <div class="border-t border-[#333]">
+                            <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">RA4M1</span>
+                                <span class="text-white">256 kB Flash, 32 kB RAM</span>    
+                            </div>
+                            <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">ESP32-S3-MINI-1-N8</span>
+                                <span class="text-white">384 kB ROM, 512 kB SRAM</span>    
+                            </div>
+                            
+                            
+                        </div>
+                    </div> 
+
+                    <div>
+                        <h2 class="text-2xl font-semibold text-white mb-4">Dimensions</h2>
+                        <div class="border-t border-[#333]">
+                            <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">Width</span>
+                                <span class="text-white">68.85 mm</span>    
+                            </div>
+                            <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">Length</span>
+                                <span class="text-white">53.34 mm</span>    
+                            </div>    
+                        </div>
+                    </div> 
+                </div>
+            </main>
+        </div>
+    </div>
+
+</body>
+</html>
+
+
+            
