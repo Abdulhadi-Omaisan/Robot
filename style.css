@@ -2,6 +2,12 @@
 body {
     
     background-color: #121212;
+
+   
+    background-image: url('https://www.transparenttextures.com/patterns/circuit-board.png'); 
+    
+   
+    background-repeat: repeat;
     color: #e0e0e0;           
     
 
