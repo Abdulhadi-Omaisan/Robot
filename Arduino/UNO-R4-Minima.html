@@ -1,1 +1,330 @@
-22
+<!DOCTYPE html>
+<html lang="ar" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arduino_UNO_R4_Minima</title>
+    <link rel="stylesheet" href="../style.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+       
+        :root {
+            --arduino-teal: #022223;
+        }
+        .bg-arduino-teal {
+            background-color: var(--arduino-teal);
+        }
+        .text-arduino-teal {
+            color: var(--arduino-teal);
+        }
+        
+        body {
+            font-family: 'Inter', 'Cairo', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-[#121212] text-[#e0e0e0]">
+
+    <div class="flex flex-col h-screen">
+        <header class="border-b bg-[#1e1e1e] border-[#333] shadow-sm sticky top-0 z-10">
+            <nav class="flex items-center justify-between h-16 px-4 md:px-6  main-nav">
+                
+                <div class="flex items-stretch h-full">
+                    <a href="../" class="flex items-center justify-center bg-arduino-teal px-4 text-white text-xl font-bold tracking-wider">
+                        ARDUINO
+                    </a>
+                    
+                </div>
+
+                <div class="logo-container">
+            <img src="../img/logo.png">
+        </div>
+
+                <ul>
+                <li><a href="../">Ana Sayfa </a></li>
+                <li><a href="../">Hakkımızda </a></li>
+                <li><a href="../">İletişim </a></li>
+            </ul>
+            </nav>
+        </header>
+
+       
+        <div class="flex flex-1 overflow-hidden">
+
+            <aside class="w-64 bg-[#1e1e1e] border-l border-[#333] p-5 overflow-y-auto hidden md:block flex-shrink-0">
+
+                <h2 class="text-xl font-bold text-gray-100 mb-4">Legacy Documentation</h2>
+                
+                <nav>
+                    <ul>
+                        <li class="mb-2">
+                            <button class="flex items-center justify-between w-full font-semibold text-gray-300">
+                                Boards
+                               
+                            </button>
+                            <ul class="mt-2 ml-4 space-y-1 text-sm">
+                                <li>
+                                    <a href="R4WIFI.html" class="block px-3 py-2 rounded-md text-gray-400 hover:bg-[#2a2a2a]">Arduino_UNO_R4_WiFi</a>
+                                </li>
+                                <li>
+                                    <a href="Unoatmega.html" class="block px-3 py-2 rounded-md text-gray-400 hover:bg-[#2a2a2a]">Arduino_UNO_ATmega328P</a>
+                                </li>
+                                <li>
+                                    <a href="UNO-R4-Minima.html" class="block px-3 py-2 rounded-md bg-blue-900 text-blue-200 font-semibold">Arduino_UNO_R4_Minima</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-3 py-2 rounded-md text-gray-400 hover:bg-[#2a2a2a]">Arduino Diecimila</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-3 py-2 rounded-md text-gray-400 hover:bg-[#2a2a2a]">Arduino Duemilanove</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-3 py-2 rounded-md text-gray-400 hover:bg-[#2a2a2a]">Arduino Esplora</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
+
+            
+            <main class="flex-1 p-8 md:p-12 overflow-y-auto" lang="en" dir="ltr">
+                <h1 class="text-4xl font-bold text-white mb-4">UNO R4 Minima</h1>
+                
+                <p class="text-lg text-gray-300 leading-relaxed mb-8">
+                 The Arduino UNO R4 Minima is the first UNO board featuring a 32-bit microcontroller, the RA4M1 from Renesas.
+                 It is faster, has more memory and has a number of built-in features such as a DAC, RTC and HID.
+                 The UNO R4 Minima is a 5 V only board.
+                
+                <figure class="max-w-3xl mx-auto mb-8">
+                    <img src="../img/atmegade.png" 
+                         alt="[صورة للوحة Arduino 101]" 
+                         class="w-full rounded-lg shadow-lg border border-[#333]">
+                    <figcaption class="text-center text-gray-500 mt-3">
+                       The UNO R4 Minima features a microcontroller based on the Renesas RA4M1 (Arm® Cortex®-M4) with an operating voltage of 5 V. 
+                      It has 14 digital I/O, 6 analog inputs with up to 14-bit resolution, a clock speed of 48 MHz, and 32 kB SRAM, 256 kB flash memory & 8 kB of EEPROM.
+                      It features a DAC for audio projects, RTC for accurate time tracking and HID for emulating a keyboard/mouse. 
+                      The barrel jack plug (VIN) supports voltages at up to 24V, making it compatible with common higher voltage adapters.
+                    </figcaption>
+                </figure>
+
+               <article class="prose prose-invert max-w-none text-gray-300">
+                    <p>
+                        Pins 0 to 13 are digital GPIO pins. Pins A0 to A5 double as analog input pins, in addition to being digital GPIO pins.
+
+There are three ground pins: GND.1, which is on top of the board, next to pin 13, and GND.2/GND.3, which are on the bottom.
+
+Pins VIN / 5V are connected to the positive power supply.
+
+Pins 3.3V / IOREF / AREF / RESET are not available in the simulation.
+
+Digital pins 3, 5, 6, 9, 10, and 11 have hardware PWM support.
+
+Some of the digital pins also have additional functions:
+                    </p>
+                </article>  
+
+                <h3> Analoge pins: </h3>
+                <a>
+                <img src="../img/atmega 1.png" >  
+            </a>
+
+                <h3> The board includes four LEDs: </h3>
+                <a>
+                <img src="../img/atmega 2.png" >  
+            </a>
+
+                <h3> Simulation features </h3>
+                <a>
+                <img src="../img/atmega 3.png" >  
+            </a>
+
+            
+
+
+                <nav class="flex space-x-8 border-b border-[#333] mb-6">
+                    <a href="#" class="py-4 px-1 text-white font-semibold border-b-2 border-arduino-teal">Tech Specs</a>
+                </nav>
+
+                <p class="text-gray-300 mb-10">Maximum current draw per pin: the UNO R4 series' maximum current draw per GPIO is 8 mA, which is significantly lower than previous versions. Exceeding this limit may damage your pin / board.</p>
+
+                
+                <div class="space-y-8">
+                    
+                    
+                    <div>
+                        <h2 class="text-2xl font-semibold text-white mb-4">Board</h2>
+                        <div class="border-t border-[#333]">
+                            <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-gray-400">Name</span>
+                                <span class="text-white">Arduino® UNO R4 Minima</span>
+                            </div>
+                            <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-gray-400">SKU</span>
+                                <span class="text-white">ABX00080 / ABX00080_CN / ABX00080_IN</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div>
+                        <h2 class="text-2xl font-semibold text-white mb-4">Microcontroller</h2>
+                        <div class="border-t border-[#333]">
+                            <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">Renesas RA4M1 (Arm® Cortex®-M4)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                 
+                    <div>
+                        <h2 class="text-2xl font-semibold text-white mb-4">USB</h2>
+                        <div class="border-t border-[#333]">
+                            <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">USB-B</span>
+                               <span class="text-white">Programming Port</span>
+                            </div>
+                        </div>
+                    </div> 
+
+
+                     <div>
+                        <h2 class="text-2xl font-semibold text-white mb-4">Pins </h2>
+                        <div class="border-t border-[#333]">
+                            <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">Built-in LED Pin</span>
+                                <span class="text-white">13</span>
+                            </div>
+
+                            <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">Digital I/O Pins</span>
+                                <span class="text-white">14</span>
+                            </div>
+
+                            <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">Analog input pins</span>
+                                <span class="text-white">6</span>
+                            </div>
+
+                            <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">PWM pins</span>
+                                <span class="text-white">6</span>
+                            </div>
+
+                           <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white"> DAC</span>
+                                <span class="text-white">1</span>
+                            </div>
+
+
+                           <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">External interrupts</span>
+                                <span class="text-white">2-3</span>
+                            </div>
+                        </div>
+                    </div> 
+
+
+                    
+                     <div>
+                        <h2 class="text-2xl font-semibold text-white mb-4">Communication</h2>
+                        <div class="border-t border-[#333]">
+                            <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">UART</span>
+                                <span class="text-white">Yes</span>
+                            </div>
+
+                            <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">I2C</span>
+                                <span class="text-white">Yes</span>
+                            </div>
+
+                            <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">SPI</span>
+                                <span class="text-white">Yes</span>
+                            </div>
+
+                          <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">CAN</span>
+                                <span class="text-white">	Yes 1 CAN Bus</span>
+                            </div>
+                        </div>
+                    </div> 
+
+
+                    <div>
+                        <h2 class="text-2xl font-semibold text-white mb-4">Power</h2>
+                        <div class="border-t border-[#333]">
+                            <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">Circuit operating voltage</span>
+                                <span class="text-white">5V</span>
+                            </div>
+
+                            <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">Input voltage (VIN)</span>
+                                <span class="text-white">6-24V</span>
+                            </div>
+
+                            <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">DC Current per I/O Pin</span>
+                                <span class="text-white">8 mA</span>
+                            </div>
+
+                            
+                        </div>
+                    </div> 
+
+
+                    <div>
+                        <h2 class="text-2xl font-semibold text-white mb-4">Clock speed</h2>
+                        <div class="border-t border-[#333]">
+                            <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">Main core</span>
+                                <span class="text-white">48 MHz</span>
+                            </div>
+      
+                        </div>
+                    </div>
+
+
+                    <div>
+                        <h2 class="text-2xl font-semibold text-white mb-4">Memory</h2>
+                        <div class="border-t border-[#333]">
+                            <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">RA4M1</span>
+                                <span class="text-white">256 kB Flash, 32 kB RAM</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div>
+                        <h2 class="text-2xl font-semibold text-white mb-4">Dimensions</h2>
+                        <div class="border-t border-[#333]">
+                          
+
+                            <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">Width</span>
+                                <span class="text-white">	68.85 mm</span>
+                            </div>
+
+                            <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">Length</span>
+                                <span class="text-white">	53.34 mm</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    
+                </div>
+            </main>
+        </div>
+    </div>
+
+</body>
+</html>
+
+
+            
