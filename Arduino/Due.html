@@ -1,1 +1,344 @@
-0
+<!DOCTYPE html>
+<html lang="ar" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arduino_UNO_ATmega328P</title>
+    <link rel="stylesheet" href="../style.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+       
+        :root {
+            --arduino-teal: #022223;
+        }
+        .bg-arduino-teal {
+            background-color: var(--arduino-teal);
+        }
+        .text-arduino-teal {
+            color: var(--arduino-teal);
+        }
+        
+        body {
+            font-family: 'Inter', 'Cairo', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-[#121212] text-[#e0e0e0]">
+
+    <div class="flex flex-col h-screen">
+        <header class="border-b bg-[#1e1e1e] border-[#333] shadow-sm sticky top-0 z-10">
+            <nav class="flex items-center justify-between h-16 px-4 md:px-6  main-nav">
+                
+                <div class="flex items-stretch h-full">
+                    <a href="../" class="flex items-center justify-center bg-arduino-teal px-4 text-white text-xl font-bold tracking-wider">
+                        ARDUINO
+                    </a>
+                    
+                </div>
+
+                <div class="logo-container">
+            <img src="../img/logo.png">
+        </div>
+
+                <ul>
+                <li><a href="../">Ana Sayfa </a></li>
+                <li><a href="../">Hakkımızda </a></li>
+                <li><a href="../">İletişim </a></li>
+            </ul>
+            </nav>
+        </header>
+
+       
+        <div class="flex flex-1 overflow-hidden">
+
+            <aside class="w-64 bg-[#1e1e1e] border-l border-[#333] p-5 overflow-y-auto hidden md:block flex-shrink-0">
+
+                <h2 class="text-xl font-bold text-gray-100 mb-4">Legacy Documentation</h2>
+                
+                <nav>
+                    <ul>
+                        <li class="mb-2">
+                            <button class="flex items-center justify-between w-full font-semibold text-gray-300">
+                                Boards
+                               
+                            </button>
+                            <ul class="mt-2 ml-4 space-y-1 text-sm">
+                                <li>
+                                    <a href="R4WIFI.html" class="block px-3 py-2 rounded-md text-gray-400 hover:bg-[#2a2a2a]">UNO R4 WiFi</a>
+                                </li>
+                                <li>
+                                    <a href="Unoatmega.html" class="block px-3 py-2 rounded-md bg-blue-900 text-blue-200 font-semibold">UNO ATmega328P</a>
+                                </li>
+                                <li>
+                                    <a href="UNO-R4-Minima.html" class="block px-3 py-2 rounded-md text-gray-400 hover:bg-[#2a2a2a]">UNO R4 Minima</a>
+                                </li>
+                                <li>
+                                    <a href="UNO-R3-SMD.html" class="block px-3 py-2 rounded-md text-gray-400 hover:bg-[#2a2a2a]">UNO R3 SMD</a>
+                                </li>
+                                <li>
+                                    <a href="UNO-WIFI-REV2.html" class="block px-3 py-2 rounded-md text-gray-400 hover:bg-[#2a2a2a]">UNO WIFI Rev2</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-3 py-2 rounded-md text-gray-400 hover:bg-[#2a2a2a]">Arduino Esplora</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
+
+            
+            <main class="flex-1 p-8 md:p-12 overflow-y-auto" lang="en" dir="ltr">
+                <h1 class="text-4xl font-bold text-white mb-4">ATmega328P</h1>
+                
+                <p class="text-lg text-gray-300 leading-relaxed mb-8">
+                The Arduino Due is the first Arduino board based on a 32-bit ARM core microcontroller. With 54 digital input/output pins, 12 analog inputs, 
+                  2 DAC and 2 CAN it is the perfect board for powerful larger scale Arduino projects.
+                <figure class="max-w-3xl mx-auto mb-8">
+                    <img src="../imgAtmega/atmegade.png" 
+                         alt="[صورة للوحة Arduino 101]" 
+                         class="w-full rounded-lg shadow-lg border border-[#333]">
+                    <figcaption class="text-center text-gray-500 mt-3">
+                      The Arduino Due is a microcontroller board based on the Atmel SAM3X8E ARM Cortex-M3 CPU. It is the first Arduino board based on a 32-bit ARM core microcontroller. It has 54 digital input/output pins (of which 12 can be used as PWM outputs), 12 analog inputs, 4 UARTs (hardware serial ports), a 84 MHz clock, an USB OTG capable connection, 2 DAC (digital to analog), 
+                      2 TWI, a power jack, an SPI header, a JTAG header, a reset button and an erase button.
+                    </figcaption>
+                </figure>
+
+
+
+                   <h3>---</h3>
+                <a href="../imgAtmega/A1.png" target="_blank">
+                <img src="../imgAtmega/A1.png" >  
+            </a>
+
+                <h3 class="py-4 px-1 text-white font-semibold border-arduino-teal"> schematics </h3>
+                <a href="../imgAtmega/A5.png" target="_blank">
+                <img src="../imgAtmega/A5.png" >  
+            </a>
+
+                <h3 class="py-4 px-1 text-white font-semibold border-arduino-teal">Mounting Holes And Board Outline</h3>
+                <a href="../imgAtmega/A4.png" target="_blank">
+                <img src="../imgAtmega/A4.png" >  
+            </a>
+
+
+                 <h3 class="py-4 px-1 text-white font-semibold border-arduino-teal"> Board Topology </h3>
+                <a href="../imgAtmega/A2.png" target="_blank">
+                <img src="../imgAtmega/A2.png" > 
+                <img src="../imgAtmega/A3.png" >  
+            </a>
+
+                <h3> Analoge pins: </h3>
+                <a>
+                <img src="../imgAtmega/atmega 1.png" >  
+            </a>
+
+                <h3> The board includes four LEDs: </h3>
+                <a>
+                <img src="../imgAtmega/atmega 2.png" >  
+            </a>
+
+                <h3> Simulation features </h3>
+                <a>
+                <img src="../imgAtmega/atmega 3.png" >  
+            </a>
+
+            
+
+
+                <nav class="flex space-x-8 border-b border-[#333] mb-6">
+                    <a href="#" class="py-4 px-1 text-white font-semibold border-b-2 border-arduino-teal">Tech Specs</a>
+                </nav>
+
+                <p class="text-gray-300 mb-10">Here you will find the technical specifications for the Arduino UNO ATmega328p.</p>
+
+                
+                <div class="space-y-8">
+                    
+                    
+                    <div>
+                        <h2 class="text-2xl font-semibold text-white mb-4">Board</h2>
+                        <div class="border-t border-[#333]">
+                            <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-gray-400">Name</span>
+                                <span class="text-white">Arduino Due</span>
+                            </div>
+                            <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-gray-400">SKU</span>
+                                <span class="text-white">A000062</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div>
+                        <h2 class="text-2xl font-semibold text-white mb-4">Microcontroller</h2>
+                        <div class="border-t border-[#333]">
+                            <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">AT91SAM3X8E</span>
+                            </div>
+                        </div>
+                    </div>
+
+                 
+                    <div>
+                        <h2 class="text-2xl font-semibold text-white mb-4">USB connector</h2>
+                        <div class="border-t border-[#333]">
+                            <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">Micro USB</span>
+                            </div>
+                        </div>
+                    </div> 
+
+
+                     <div>
+                        <h2 class="text-2xl font-semibold text-white mb-4">Pins </h2>
+                        <div class="border-t border-[#333]">
+                            <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">Built-in LED Pin</span>
+                                <span class="text-white">13</span>
+                            </div>
+
+                            <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">Digital I/O Pins</span>
+                                <span class="text-white">54</span>
+                            </div>
+
+                            <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">Analog input pins</span>
+                                <span class="text-white">12</span>
+                            </div>
+
+                          <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">Analog output  pins</span>
+                                <span class="text-white">2</span>
+                            </div>
+
+                            <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">PWM pins</span>
+                                <span class="text-white">12</span>
+                            </div>
+                        </div>
+                    </div> 
+
+
+                    
+                     <div>
+                        <h2 class="text-2xl font-semibold text-white mb-4">Communication</h2>
+                        <div class="border-t border-[#333]">
+                            <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">UART</span>
+                                <span class="text-white">Yes-4</span>
+                            </div>
+
+                            <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">I2C</span>
+                                <span class="text-white">Yes</span>
+                            </div>
+
+                            <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">SPI</span>
+                                <span class="text-white">Yes</span>
+                            </div>
+
+
+                          <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">CAN</span>
+                                <span class="text-white">Yes (ext. transceiver needed)</span>
+                            </div>
+                        </div>
+                    </div> 
+
+
+                    <div>
+                        <h2 class="text-2xl font-semibold text-white mb-4">Power</h2>
+                        <div class="border-t border-[#333]">
+                            <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">I/O Voltage</span>
+                                <span class="text-white">3.3v</span>
+                            </div>
+
+                            <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">Input voltage (nominal)</span>
+                                <span class="text-white">7-12V</span>
+                            </div>
+
+                            <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">DC Current per I/O Pin (group 1)</span>
+                                <span class="text-white">9 mA</span>
+                            </div>
+
+                          <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">DC Current per I/O Pin (group 2)</span>
+                                <span class="text-white">3 mA</span>
+                            </div>
+
+                            <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">Power Supply Connector</span>
+                                <span class="text-white">Barrel Plug</span>
+                            </div>
+
+
+                            <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">Total DC Output Current on all I/O lines</span>
+                                <span class="text-white">130 mA</span>
+                            </div>
+                        </div>
+                    </div> 
+
+
+                    <div>
+                        <h2 class="text-2xl font-semibold text-white mb-4">Clock speed</h2>
+                        <div class="border-t border-[#333]">
+                            <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white"> Processor</span>
+                                <span class="text-white">AT91SAM3X8E 84 MHz</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div>
+                        <h2 class="text-2xl font-semibold text-white mb-4">Memory</h2>
+                        <div class="border-t border-[#333]">
+                            <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">AT91SAM3X8E</span>
+                                <span class="text-white">96KB SRAM, 512KB flash</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div>
+                        <h2 class="text-2xl font-semibold text-white mb-4">Dimensions</h2>
+                        <div class="border-t border-[#333]">
+                            <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">Weight</span>
+                                <span class="text-white">36 g</span>
+                            </div>
+
+                            <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">Width</span>
+                                <span class="text-white">53.4 mm</span>
+                            </div>
+
+                            <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">Length</span>
+                                <span class="text-white">101.5 mm</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    
+                </div>
+            </main>
+        </div>
+    </div>
+
+</body>
+</html>
+
+
+            
