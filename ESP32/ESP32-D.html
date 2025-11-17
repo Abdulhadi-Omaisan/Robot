@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GIGA R1 WiFi</title>
+    <title>ESP32</title>
     <link rel="stylesheet" href="../style.css">
 
     <script src="https://cdn.tailwindcss.com"></script>
@@ -65,7 +65,7 @@
                             </button>
                             <ul class="mt-2 ml-4 space-y-1 text-sm">
                                 <li>
-                                    <a href="R4WIFI.html" class="block px-3 py-2 rounded-md text-gray-400 hover:bg-[#2a2a2a]">Arduino R4 WiFi</a>
+                                    <a href="ESP32-D.html" class="block px-3 py-2 rounded-md bg-blue-900 text-blue-200 font-semibold">ESP32</a>
                                 </li>
                                 <li>
                                     <a href="Unoatmega.html" class="block px-3 py-2 rounded-md text-gray-400 hover:bg-[#2a2a2a]">Arduino ATmega328P</a>
@@ -83,7 +83,7 @@
                                     <a href="Due.html" class="block px-3 py-2 rounded-md text-gray-400 hover:bg-[#2a2a2a]">Arduino Due</a>
                                 </li>
                                <li>
-                                    <a href="GIGA.html" class="block px-3 py-2 rounded-md bg-blue-900 text-blue-200 font-semibold">Arduino GIGA R1 WiFi</a>
+                                    <a href="GIGA.html" class="block px-3 py-2 rounded-md text-gray-400 hover:bg-[#2a2a2a]">Arduino GIGA R1 WiFi</a>
                                 </li>
                                  <li>
                                     <a href="Mega2560.html" class="block px-3 py-2 rounded-md text-gray-400 hover:bg-[#2a2a2a]">Arduino Mega 2560</a>
@@ -96,126 +96,84 @@
 
             
             <main class="flex-1 p-8 md:p-12 overflow-y-auto" lang="en" dir="ltr">
-                <h1 class="text-4xl font-bold text-white mb-4">Arduino GIGA R1 WiFi</h1>
+                <h1 class="text-4xl font-bold text-white mb-4">ESP32</h1>
                 
                 <p class="text-lg text-gray-300 leading-relaxed mb-8">
-                The GIGA R1 WiFi is a powerful, feature-packed board with a large amount of GPIOs and dedicated connectors. Based on the STM32H747XI micro based on the Mbed OS, the GIGA R1 WiFi features 76 GPIOs, a dual core processor, advanced ADC/DAC features as well as camera & display connectors. 
-                  It also has a rich USB interface with support for HID via USB-C® and USBHost (keyboard, mass storage) via a dedicated USB-A connector.
+                ESP32 is a single 2.4 GHz Wi-Fi-and-Bluetooth combo chip designed with the TSMC low-power 40 nm
+technology. It is designed to achieve the best power and RF performance, showing robustness, versatility and
+reliability in a wide variety of applications and power scenarios.
                 <figure class="max-w-3xl mx-auto mb-8">
-                    <img src="../imgGIGA/2.png" 
+                    <img src="../imgESP32/1.png" 
                          alt="[صورة للوحة Arduino 101]" 
                          class="w-full rounded-lg shadow-lg border border-[#333]">
                     <figcaption class="text-center text-gray-500 mt-3">
-                      The GIGA R1 WiFi comes with a USB-C® connector for programming, communication and HID functionality, a USB-A connector for connecting devices such as USB sticks and keyboards. 
-                      It features a 3.5 mm audio jack for connecting speakers, microphones etc. Dedicated camera & display connectors are located at the top of the board, which can also be connected from underneath.
+                     The ESP32 series of chips includes ESP32-D0WD-V3, ESP32-D0WDR2-V3, ESP32-U4WDH, ESP32-S0WD
+(NRND), ESP32-D0WDQ6-V3 (NRND), ESP32-D0WD (NRND), and ESP32-D0WDQ6 (NRND), among
+which,
+• ESP32-S0WD (NRND), ESP32-D0WD (NRND), and ESP32-D0WDQ6 (NRND) are based on chip revision
+v1 or chip revision v1.1.
+• ESP32-D0WD-V3, ESP32-D0WDR2-V3, ESP32-U4WDH, and ESP32-D0WDQ6-V3 (NRND) are based on
+chip revision v3.0 or chip revision v3.1.
+For details on part numbers and ordering information, please refer to Section 1 ESP32 Series Comparison. For
+details on chip revisions, please refer to ESP32 Chip Revision v3.0 User Guide and
+ESP32 Series SoC Errata.
 
-With a fast dual core microcontroller (480MHz / 240MHz), 76 GPIOs, several communication buses, 
-                      you can build large projects using the GIGA R1 WiFi as a base. 
-                      The GIGA R1 WiFi also comes equipped with a radio module, crypto chip and an antenna.
                     </figcaption>
                 </figure>
 
 
 
                    <h3 class="py-4 px-1 text-white font-semibold border-arduino-teal">---</h3>
-                <a href="../imgGIGA/3.png" target="_blank">
-                <img src="../imgGIGA/3.png" >  
+                <a href="../imgESP32/2.png" target="_blank">
+                <img src="../imgESP32/2.png" >  
             </a>
 
                 <h3 class="py-4 px-1 text-white font-semibold border-arduino-teal"> --- </h3>
-                <a href="../imgGIGA/4.png" target="_blank">
-                <img src="../imgGIGA/4.png" >  
+                <a href="../imgESP32/3.png" target="_blank">
+                <img src="../imgESP32/3.png" >  
             </a>
 
                 <h3 class="py-4 px-1 text-white font-semibold border-arduino-teal">schematics TOP</h3>
-                <a href="../imgGIGA/5.png" target="_blank">
-                <img src="../imgGIGA/5.png" >  
+                <a href="../imgESP32/4.png" target="_blank">
+                <img src="../imgESP32/4.png" >  
             </a>
-
-
-                 <h3 class="py-4 px-1 text-white font-semibold border-arduino-teal">schematics STM32H747</h3>
-                <a href="../imgGIGA/6.png" target="_blank">
-                <img src="../imgGIGA/6.png" > 
-                
-            </a>
-
-                <h3 class="py-4 px-1 text-white font-semibold border-arduino-teal"> Board  Dimensions: </h3>
-               <a href="../imgGIGA/7.png" target="_blank">
-                <img src="../imgGIGA/7.png" >  
-            </a>
-
-                <h3 class="py-4 px-1 text-white font-semibold border-arduino-teal"> Board Topology </h3>
-                <a href="../imgGIGA/8.png" target="_blank">
-                <img src="../imgGIGA/8.png" >  
-            </a>
-
-                <h3 class="py-4 px-1 text-white font-semibold border-arduino-teal">Three-Pins Header - J1</h3>
-                 <a href="../imgGIGA/9.png" target="_blank">
-                <img src="../imgGIGA/9.png" >  
-            </a>
-
-              <h3 class="py-4 px-1 text-white font-semibold border-arduino-teal">Analog</h3>
-                 <a href="../imgGIGA/10.png" target="_blank">
-                <img src="../imgGIGA/10.png" >  
-            </a>
-
-
-                <h3 class="py-4 px-1 text-white font-semibold border-arduino-teal">Digital</h3>
-                <a href="../imgGIGA/11.png" target="_blank">
-                <img src="../imgGIGA/11.png" >  
-            </a>
-
-
-                    <h3 class="py-4 px-1 text-white font-semibold border-arduino-teal"> STM32 ICSP</h3>
-                <a href="../imgGIGA/12.png" target="_blank">
-                <img src="../imgGIGA/12.png" >  
-            </a>
-
-
-                    <h3 class="py-4 px-1 text-white font-semibold border-arduino-teal">Digital Pins D22 - D53 LHS</h3>
-                <a href="../imgGIGA/13.png" target="_blank">
-                <img src="../imgGIGA/13.png" >  
-            </a>
-
-
-                    <h3 class="py-4 px-1 text-white font-semibold border-arduino-teal">Digital Pins D22 - D53 RHS</h3>
-                <a href="../imgGIGA/14.png" target="_blank">
-                <img src="../imgGIGA/14.png" >  
-            </a>
-
-            
-
-
+                    
                 <nav class="flex space-x-8 border-b border-[#333] mb-6">
                     <a href="#" class="py-4 px-1 text-white font-semibold border-b-2 border-arduino-teal">Tech Specs</a>
                 </nav>
 
-                <p class="text-gray-300 mb-10">Here you will find the technical specifications for the Arduino GIGA R1 WiFi.</p>
+                <p class="text-gray-300 mb-10">Here you will find the technical specifications for the ESP32</p>
 
                 
                 <div class="space-y-8">
                     
                     
                     <div>
-                        <h2 class="text-2xl font-semibold text-white mb-4">Board</h2>
+                        <h2 class="text-2xl font-semibold text-white mb-4">Features</h2>
                         <div class="border-t border-[#333]">
                             <div class="flex justify-between py-4 border-b border-[#333]">
                                 <span class="text-gray-400">Name</span>
-                                <span class="text-white">Arduino GIGA R1 WiFi</span>
-                            </div>
-                            <div class="flex justify-between py-4 border-b border-[#333]">
-                                <span class="text-gray-400">SKU</span>
-                                <span class="text-white">ABX00063</span>
+                                <span class="text-white">ESP32</span>
                             </div>
                         </div>
                     </div>
 
                     
                     <div>
-                        <h2 class="text-2xl font-semibold text-white mb-4">Microcontroller</h2>
+                        <h2 class="text-2xl font-semibold text-white mb-4">Wi-Fi</h2>
                         <div class="border-t border-[#333]">
                             <div class="flex justify-between py-4 border-b border-[#333]">
-                                <span class="text-white">STM32H747XI dual Cortex-M7+M4 32bit low power Arm MCU</span>
+                                <span class="text-white"> 802.11b/g/n</span>
+                                <span class="text-white"> 802.11n (2.4 GHz), up to 150 Mbps</span>
+                                <span class="text-white"> WMM </span>
+                                <span class="text-white"> TX/RX A-MPDU, RX A-MSDU</span>
+                                <span class="text-white"> Immediate Block ACK</span>
+                                <span class="text-white"> Defragmentation</span>
+                                <span class="text-white"> Automatic Beacon monitoring (hardware TSF)</span>
+                                <span class="text-white"> Four virtual Wi-Fi interfaces</span>
+                                <span class="text-white">  Simultaneous support for Infrastructure Station, SoftAP, and Promiscuous modes
+Note that when ESP32 is in Station mode, performing a scan, the SoftAP channel will be changed.</span>
+                                <span class="text-white"> Antenna diversity</span>
                             </div>
                         </div>
                     </div>
