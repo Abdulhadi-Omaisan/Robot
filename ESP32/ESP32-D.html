@@ -219,47 +219,72 @@ ESP32 Series SoC Errata.
 
                  
                     <div>
-                        <h2 class="text-2xl font-semibold text-white mb-4">USB</h2>
+                        <h3 class="text-4xl font-bold border-b-2 text-white mb-4">Bluetooth</h3>
                         <div class="border-t border-[#333]">
                             <div class="flex justify-between py-4 border-b border-[#333]">
-                                <span class="text-white">USB-C</span>
-                                <span class="text-white">Programming Port / HID</span>
-                            </div>
+                                <span class="text-white">• Compliant with Bluetooth v4.2 BR/EDR and Bluetooth LE specifications</span>
+                            </div> 
 
-                          <div class="flex justify-between py-4 border-b border-[#333]">
-                                <span class="text-white">USB-A</span>
-                                <span class="text-white">Host (enable with PA_15)</span>
-                            </div>
+                            <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">• Class-1, class-2 and class-3 transmitter without external power amplifier</span>
+                            </div> 
+
+                            <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">• Enhanced Power Control</span>
+                            </div> 
+
+                            <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">• +9 dBm transmitting power</span>
+                            </div> 
+
+                            <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">• Adaptive Frequency Hopping (AFH)</span>
+                            </div> 
+
+                            <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">• Synchronous Connection-Oriented/Extended (SCO/eSCO)</span>
+                            </div> 
+
+                            <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">• CVSD and SBC for audio codec</span>
+                            </div> 
+
+                            <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">• Bluetooth Piconet and Scatternet</span>
+                            </div> 
+
+                            <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">• Multi-connections in Classic Bluetooth and Bluetooth LE</span>
+                            </div> 
+
+                            <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">• Simultaneous advertising and scanning</span>
+                            </div> 
                         </div>
                     </div> 
 
 
                      <div>
-                        <h2 class="text-2xl font-semibold text-white mb-4">Pins </h2>
+                        <h3 class="text-4xl font-bold border-b-2 text-white mb-4">CPU and Memory</h3>
                         <div class="border-t border-[#333]">
                             <div class="flex justify-between py-4 border-b border-[#333]">
-                                <span class="text-white">Digital I/O Pins</span>
-                                <span class="text-white">	76</span>
+                                <span class="text-white">• Xtensa single-/dual-core 32-bit LX6 microprocessor(s)</span>
                             </div>
 
                             <div class="flex justify-between py-4 border-b border-[#333]">
-                                <span class="text-white">Analog input pins</span>
-                                <span class="text-white">12</span>
+                                <span class="text-white">• 448 KB ROM</span>
                             </div>
 
                           <div class="flex justify-between py-4 border-b border-[#333]">
-                                <span class="text-white">DAC</span>
-                                <span class="text-white">	2 (DAC0/DAC1)</span>
+                                <span class="text-white">• 520 KB SRAM</span>
                             </div>
 
                             <div class="flex justify-between py-4 border-b border-[#333]">
-                                <span class="text-white">PWM pins</span>
-                                <span class="text-white">12</span>
+                                <span class="text-white">• 16 KB SRAM in RTC</span>
                             </div>
 
                           <div class="flex justify-between py-4 border-b border-[#333]">
-                                <span class="text-white">Misc</span>
-                                <span class="text-white">	VRTC & OFF pin</span>
+                                <span class="text-white">• QSPI supports multiple flash/SRAM chips</span>
                             </div>
                         </div>
                     </div> 
@@ -267,120 +292,59 @@ ESP32 Series SoC Errata.
 
                     
                      <div>
-                        <h2 class="text-2xl font-semibold text-white mb-4">Communication</h2>
+                        <h3 class="text-4xl font-bold border-b-2 text-white mb-4">Power Management</h3>
                         <div class="border-t border-[#333]">
                             <div class="flex justify-between py-4 border-b border-[#333]">
-                                <span class="text-white">UART</span>
-                                <span class="text-white">Yes, 4x</span>
+                                <span class="text-white">• Fine-resolution power control through a selection of clock frequency, duty cycle, Wi-Fi operating modes,
+and individual power control of internal components</span>
                             </div>
 
                             <div class="flex justify-between py-4 border-b border-[#333]">
-                                <span class="text-white">I2C</span>
-                                <span class="text-white">Yes, 3x</span>
+                                <span class="text-white">• Five power modes designed for typical scenarios: Active, Modem-sleep, Light-sleep, Deep-sleep,
+Hibernation</span>
                             </div>
 
                             <div class="flex justify-between py-4 border-b border-[#333]">
-                                <span class="text-white">SPI</span>
-                                <span class="text-white">Yes, 2x</span>
+                                <span class="text-white">• Power consumption in Deep-sleep mode is 10 µA</span>
                             </div>
 
 
                           <div class="flex justify-between py-4 border-b border-[#333]">
-                                <span class="text-white">CAN</span>
-                                <span class="text-white">Yes (requires an external transceiver)</span>
+                                <span class="text-white">• Ultra-Low-Power (ULP) coprocessors</span>
                             </div>
                         </div>
                     </div> 
 
 
                   <div>
-                        <h2 class="text-2xl font-semibold text-white mb-4">Connectors</h2>
+                        <h3 class="text-4xl font-bold border-b-2 text-white mb-4">With low power consumption, ESP32 is an ideal choice for IoT devices in the following areas:</h3>
                         <div class="border-t border-[#333]">
                             <div class="flex justify-between py-4 border-b border-[#333]">
-                                <span class="text-white">Camera</span>
-                                <span class="text-white">I2C + D54-D67</span>
+                                <span class="text-white">• Smart Home</span>
                             </div>
 
                             <div class="flex justify-between py-4 border-b border-[#333]">
-                                <span class="text-white">Display</span>
-                                <span class="text-white">D1N, D0N, D1P, D0P, CKN, CKP + D68-D75</span>
+                                <span class="text-white">• Industrial Automation</span>
                             </div>
 
                             <div class="flex justify-between py-4 border-b border-[#333]">
-                                <span class="text-white">Audio Jack</span>
-                                <span class="text-white">DAC0, DAC1, A7</span>
+                                <span class="text-white">• Health Care</span>
+                            </div>
+
+                             <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">• Consumer Electronics</span>
+                            </div>
+
+                             <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">• Smart Agriculture</span>
+                            </div>
+
+                             <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">• POS Machines</span>
                             </div>
                         </div>
                     </div> 
 
-
-                    <div>
-                        <h2 class="text-2xl font-semibold text-white mb-4">Power</h2>
-                        <div class="border-t border-[#333]">
-                            <div class="flex justify-between py-4 border-b border-[#333]">
-                                <span class="text-white">Circuit operating voltage</span>
-                                <span class="text-white">3.3v</span>
-                            </div>
-
-                            <div class="flex justify-between py-4 border-b border-[#333]">
-                                <span class="text-white">Input voltage (VIN)</span>
-                                <span class="text-white">	6-24V</span>
-                            </div>
-
-                            <div class="flex justify-between py-4 border-b border-[#333]">
-                                <span class="text-white">DC Current per I/O Pin</span>
-                                <span class="text-white">8 mA</span>
-                            </div>
-                        </div>
-                    </div> 
-
-
-                    <div>
-                        <h2 class="text-2xl font-semibold text-white mb-4">Clock speed</h2>
-                        <div class="border-t border-[#333]">
-                            <div class="flex justify-between py-4 border-b border-[#333]">
-                                <span class="text-white"> Main core</span>
-                                <span class="text-white">480 MHz</span>
-                            </div>
-
-                           <div class="flex justify-between py-4 border-b border-[#333]">
-                                <span class="text-white">Second core</span>
-                                <span class="text-white">240 MHz</span>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div>
-                        <h2 class="text-2xl font-semibold text-white mb-4">Memory</h2>
-                        <div class="border-t border-[#333]">
-                            <div class="flex justify-between py-4 border-b border-[#333]">
-                                <span class="text-white">STM32H747XI</span>
-                                <span class="text-white">2MB Flash, 1MB RAM</span>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div>
-                        <h2 class="text-2xl font-semibold text-white mb-4">Dimensions</h2>
-                        <div class="border-t border-[#333]">
-                            <div class="flex justify-between py-4 border-b border-[#333]">
-                                <span class="text-white">Weight</span>
-                                <span class="text-white">36 g</span>
-                            </div>
-
-                            <div class="flex justify-between py-4 border-b border-[#333]">
-                                <span class="text-white">Width</span>
-                                <span class="text-white">53.3 mm</span>
-                            </div>
-
-                            <div class="flex justify-between py-4 border-b border-[#333]">
-                                <span class="text-white">Length</span>
-                                <span class="text-white">101.5 mm</span>
-                            </div>
-                        </div>
-                    </div>
 
 
                     
