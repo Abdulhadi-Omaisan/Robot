@@ -1,1 +1,371 @@
-0
+
+<!DOCTYPE html>
+<html lang="ar" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESP32-S3</title>
+    <link rel="stylesheet" href="../style.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+       
+        :root {
+            --arduino-teal: #022223;
+        }
+        .bg-arduino-teal {
+            background-color: var(--arduino-teal);
+        }
+        .text-arduino-teal {
+            color: var(--arduino-teal);
+        }
+        
+        body {
+            font-family: 'Inter', 'Cairo', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-[#121212] text-[#e0e0e0]">
+
+    <div class="flex flex-col h-screen">
+        <header class="border-b bg-[#1e1e1e] border-[#333] shadow-sm sticky top-0 z-10">
+            <nav class="flex items-center justify-between h-16 px-4 md:px-6  main-nav">
+                
+                <div class="flex items-stretch h-full">
+                    <a href="ESP32.html" class="flex items-center justify-center bg-arduino-teal px-4 text-white text-xl font-bold tracking-wider">
+                        ESP32
+                    </a>
+                    
+                </div>
+
+                <div class="logo-container">
+            <img src="../img/logo.png">
+        </div>
+
+                <ul>
+                <li><a href="../">Ana Sayfa </a></li>
+                <li><a href="../">Hakkımızda </a></li>
+                <li><a href="../">İletişim </a></li>
+            </ul>
+            </nav>
+        </header>
+
+       
+        <div class="flex flex-1 overflow-hidden">
+
+            <aside class="w-64 bg-[#1e1e1e] border-l border-[#333] p-5 overflow-y-auto hidden md:block flex-shrink-0">
+
+                <h2 class="text-xl font-bold text-gray-100 mb-4">Legacy Documentation</h2>
+                
+                <nav>
+                    <ul>
+                        <li class="mb-2">
+                            <button class="flex items-center justify-between w-full font-semibold text-gray-300">
+                                Boards
+                               
+                            </button>
+                            <ul class="mt-2 ml-4 space-y-1 text-sm">
+                                <li>
+                                    <a href="ESP32-D.html" class="block px-3 py-2 rounded-md text-gray-400 hover:bg-[#2a2a2a]">ESP32-D</a>
+                                </li>
+                                <li>
+                                    <a href="ESP32-C2.html" class="block px-3 py-2 rounded-md text-gray-400 hover:bg-[#2a2a2a]">ESP32-C2</a>
+                                </li>
+                                <li>
+                                    <a href="ESP32-C3.html" class="block px-3 py-2 rounded-md text-gray-400 hover:bg-[#2a2a2a]">ESP32-C3</a>
+                                </li>
+                                <li>
+                                    <a href="ESP32-C6.html" class="block px-3 py-2 rounded-md text-gray-400 hover:bg-[#2a2a2a]">ESP32-C6</a>
+                                </li>
+                                <li>
+                                    <a href="ESP32-H2.html" class="block px-3 py-2 rounded-md text-gray-400 hover:bg-[#2a2a2a] ">ESP32-H2</a>
+                                </li>
+                                <li>
+                                    <a href="ESP32-P4.html" class="block px-3 py-2 rounded-md text-gray-400 hover:bg-[#2a2a2a]">ESP32-P4</a>
+                                </li>
+                               <li>
+                                    <a href="ESP32-S2.html" class="block px-3 py-2 rounded-md bg-blue-900 text-blue-200 font-semibold">ESP32-S2</a>
+                                </li>
+                                 <li>
+                                    <a href="ESP32-S3.html" class="block px-3 py-2 rounded-md text-gray-400 hover:bg-[#2a2a2a]">ESP32-S3</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
+
+            
+            <main class="flex-1 p-8 md:p-12 overflow-y-auto" lang="en" dir="ltr">
+                <h1 class="text-4xl font-bold text-white mb-4">ESP32-S3</h1>
+                
+                <p class="text-lg text-gray-300 leading-relaxed mb-8">
+          The ESP32-S3 is a highly integrated, low-power system-on-chip (SoC) designed by Espressif Systems. It serves as a significant upgrade to its predecessors,
+                  specifically engineered for the AIoT (Artificial Intelligence of Things) era.
+                <figure class="max-w-3xl mx-auto mb-8">
+                    <img src="../imgESP32S3/1.png" 
+                         alt="[صورة للوحة Arduino 101]" 
+                         class="w-full rounded-lg shadow-lg border border-[#333]">
+                    <figcaption class="text-center text-gray-500 mt-3">
+                 You should choose the ESP32-S3 if your project requires high security, native USB interaction (like a macro keypad or badUSB), 
+                      or a large number of pins at a low cost, and you do not require Bluetooth connectivity.
+                    </figcaption>
+                </figure>
+
+
+
+                   <h3 class="py-4 px-1 text-white font-semibold border-arduino-teal">---</h3>
+                <a href="../imgESP32S3/3.jpg" target="_blank">
+                <img src="../imgESP32S3/3.jpg" >  
+            </a>
+
+                <h3 class="py-4 px-1 text-white font-semibold border-arduino-teal"> --- </h3>
+                <a href="../imgESP32S3/4.png" target="_blank">
+                <img src="../imgESP32S3/4.png" >  
+            </a>
+
+                <h3 class="py-4 px-1 text-white font-semibold border-arduino-teal">schematics TOP</h3>
+                <a href="../imgESP32S3/5.png" target="_blank">
+                <img src="../imgESP32S3/5.png" >  
+            </a>
+
+                     <h3 class="py-4 px-1 text-white font-semibold border-arduino-teal">schematics TOP</h3>
+                <a href="../imgESP32S3/6.png" target="_blank">
+                <img src="../imgESP32S3/6.png" >  
+            </a>
+                    
+                
+                    
+                <nav class="flex space-x-8 border-b border-[#333] mb-6">
+                    <a href="#" class="py-4 px-1 text-white font-semibold border-b-2 border-arduino-teal">Tech Specs</a>
+                </nav>
+
+                <p class="text-gray-300 mb-10">Here you will find the technical specifications for the ESP32-S3</p>
+
+                
+                <div class="space-y-8">
+                    
+                    
+                    <div>
+                        <h3 class="text-2xl font-semibold text-white mb-4">Features</h3>
+                        <div class="border-t border-[#333]">
+                            <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-gray-400">Name</span>
+                                <span class="text-white">ESP32-S3</span>
+                            </div>
+                        </div>
+                    </div>
+                 
+                    <div>
+                        <h3 class="text-4xl font-bold border-b-2 text-white mb-4">Wi-Fi</h3>
+                        <div class="border-t border-[#333]">
+                            <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">• Complies with IEEE 802.11b/g/
+    </span>
+                            </div>
+                        </div>
+
+                          <div class="border-t border-[#333]">
+                            <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">• Supports 20 MHz bandwidth in 2.4 GHz ban
+                    </span>
+                            </div>
+                        </div>
+
+                           <div class="border-t border-[#333]">
+                            <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">• 1T1R mode with data rate up to 72.2 Mbps
+</span>
+                            </div>
+                        </div>
+
+                        <div class="border-t border-[#333]">
+                            <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">• Wi-Fi Multimedia (WMM)
+</span>
+                            </div>
+                        </div>
+
+                        <div class="border-t border-[#333]">
+                            <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">• TX/RX A-MPDU, TX/RX A-MSDU
+</span>
+                            </div>
+                        </div>
+
+                        <div class="border-t border-[#333]">
+                            <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">• Immediate Block ACK
+</span>
+                            </div>
+                        </div>
+
+                        <div class="border-t border-[#333]">
+                            <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">• Fragmentation and defragmentation
+</span>
+                            </div>
+                        </div>
+
+                         <div class="border-t border-[#333]">
+                            <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">• Transmit opportunity (TXOP)
+</span>
+                            </div>
+                        </div>
+
+                         <div class="border-t border-[#333]">
+                            <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">• Automatic Beacon monitoring (hardware TSF)
+</span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                               
+
+                 
+                    <div>
+                        <h3 class="text-4xl font-bold border-b-2 text-white mb-4">Bluetooth</h3>
+                        <div class="border-t border-[#333]">
+                            <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">• Bluetooth LE: Bluetooth 5.3 certified
+</span>
+                            </div> 
+
+                            <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">• High power mode (20 dBm)
+</span>
+                            </div> 
+
+                            <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">• Speed: 125 Kbps, 500 Kbps, 1 Mbps, 2 Mbps
+</span>
+                            </div> 
+
+                            <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">• Advertising extensions
+</span>
+                            </div> 
+
+                            <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">• Multiple advertisement sets
+</span>
+                            </div> 
+
+                            <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">• Channel selection algorithm #2
+</span>
+                            </div> 
+
+                            <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">• Internal co-existence mechanism between Wi-Fi and Bluetooth to share the same antenna
+</span>
+                            </div> 
+
+                           
+                        </div>
+                    </div> 
+
+
+                     <div>
+                        <h3 class="text-4xl font-bold border-b-2 text-white mb-4">CPU and Memory</h3>
+                        <div class="border-t border-[#333]">
+                            <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">• 32-bit RISC-V single-core processor, up to 120 MHz
+</span>
+                            </div>
+
+                            <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">• 576 KB ROM
+</span>
+                            </div>
+
+                          <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">• 272 KB SRAM (16 KB for cache)
+</span>
+                            </div>
+
+                            <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">• In-package flash (see details in Chapter 1 ESP8684 Series Comparison)
+</span>
+                            </div>
+
+                          <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">• Access to flash accelerated by cache
+</span>
+                            </div>
+                        </div>
+                    </div> 
+
+
+                    
+                     <div>
+                        <h3 class="text-4xl font-bold border-b-2 text-white mb-4">Power Management</h3>
+                        <div class="border-t border-[#333]">
+                            <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">• 14 programmable GPIOs
+</span>
+                            </div>
+
+                            <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">– Three SPI
+</span>
+                            </div>
+
+                            <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">– 12-bit SAR ADC, up to 5 channels
+</span>
+                            </div>
+
+
+                          <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">– 54-bit general-purpose timer
+</span>
+                            </div>
+                        </div>
+                    </div> 
+
+
+                  <div>
+                        <h3 class="text-4xl font-bold border-b-2 text-white mb-4">With low power consumption, ESP32 is an ideal choice for IoT devices in the following areas:</h3>
+                        <div class="border-t border-[#333]">
+                            <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">• Smart Home</span>
+                            </div>
+
+                            <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">• Industrial Automation</span>
+                            </div>
+
+                            <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">• Health Care</span>
+                            </div>
+
+                             <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">• Consumer Electronics</span>
+                            </div>
+
+                             <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">• Smart Agriculture</span>
+                            </div>
+
+                             <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">• POS Machines</span>
+                            </div>
+                        </div>
+                    </div> 
+
+
+
+                    
+                </div>
+            </main>
+        </div>
+    </div>
+
+</body>
+</html>
+
+
+            
