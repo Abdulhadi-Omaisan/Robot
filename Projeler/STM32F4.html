@@ -92,33 +92,36 @@
                 <h1 class="text-4xl font-bold text-white mb-4">STM32F4</h1>
                 
                 <p class="text-lg text-gray-300 leading-relaxed mb-8">
-         The STM32F4 series is one of the most successful and widely used microcontrollers in the embedded systems world. Built on the Arm® Cortex®-M4 core, it is designed to bridge 
-                  the gap between simple microcontrollers (like the Arduino or STM32F1) and powerful microprocessors.
+         The STM32F4 is a high-performance 32-bit microcontroller family developed by STMicroelectronics. It is built around the Arm® Cortex®-M4 processor core. 
+                    It is widely considered the "industry standard" for embedded projects that require more processing power than a basic Arduino but are not complex enough to require a full Linux computer (like a Raspberry Pi).
                 <figure class="max-w-3xl mx-auto mb-8">
-                    <img src="../imgESP32S3/1.jpg" 
+                    <img src="../imgSTM32F4/2.jpg" 
                          alt="[صورة للوحة Arduino 101]" 
                          class="w-full rounded-lg shadow-lg border border-[#333]">
                     <figcaption class="text-center text-gray-500 mt-3">
-                 Running at speeds up to 180 MHz (depending on the specific model like F407 or F429), the STM32F4 can handle multitasking and real-time operations with ease. It includes the 
-                      "ART Accelerator," which allows the processor to execute instructions from Flash memory with zero wait states.
+                 The heart of the STM32F4 is the Cortex-M4 core. This core has two distinct features that separate it from lower-end chips (like the F1 or F0):
+
+FPU (Floating Point Unit): It has hardware support for decimal numbers (floats). This means it can calculate math equations (like 3.14159 * x) extremely fast.
+
+DSP Instructions: It includes Digital Signal Processing instructions, making it excellent for audio processing and motor control.
                     </figcaption>
                 </figure>
 
 
 
                    <h3 class="py-4 px-1 text-white font-semibold border-arduino-teal">---</h3>
-                <a href="../imgESP32S3/3.png" target="_blank">
-                <img src="../imgESP32S3/3.png" >  
+                <a href="../imgSTM32F4/3.jpg" target="_blank">
+                <img src="../imgSTM32F4/3.jpg" >  
             </a>
 
                 <h3 class="py-4 px-1 text-white font-semibold border-arduino-teal"> --- </h3>
-                <a href="../imgESP32S3/4.png" target="_blank">
-                <img src="../imgESP32S3/4.png" >  
+                <a href="../imgSTM32F4/4.jpg" target="_blank">
+                <img src="../imgSTM32F4/4.jpg" >  
             </a>
 
                 <h3 class="py-4 px-1 text-white font-semibold border-arduino-teal">schematics TOP</h3>
-                <a href="../imgESP32S3/5.png" target="_blank">
-                <img src="../imgESP32S3/5.png" >  
+                <a href="../imgSTM32F4/5.png" target="_blank">
+                <img src="../imgSTM32F4/5.png" >  
             </a>
 
        
@@ -143,66 +146,31 @@
                     </div>
                  
                     <div>
-                        <h3 class="text-4xl font-bold border-b-2 text-white mb-4">Wi-Fi</h3>
+                        <h3 class="text-4xl font-bold border-b-2 text-white mb-4">Key Specifications</h3>
                         <div class="border-t border-[#333]">
                             <div class="flex justify-between py-4 border-b border-[#333]">
-                                <span class="text-white">• Complies with IEEE 802.11b/g/
+                                <span class="text-white">• Clock Speed: Ranges from 84 MHz up to 180 MHz.
     </span>
                             </div>
                         </div>
 
                           <div class="border-t border-[#333]">
                             <div class="flex justify-between py-4 border-b border-[#333]">
-                                <span class="text-white">• Supports 20 MHz bandwidth in 2.4 GHz ban
+                                <span class="text-white">• Flash Memory (Storage): From 128 KB up to 2 MB.
                     </span>
                             </div>
                         </div>
 
                            <div class="border-t border-[#333]">
                             <div class="flex justify-between py-4 border-b border-[#333]">
-                                <span class="text-white">• 1T1R mode with data rate up to 72.2 Mbps
+                                <span class="text-white">• SRAM (RAM): From 64 KB up to 384 KB.
 </span>
                             </div>
                         </div>
 
                         <div class="border-t border-[#333]">
                             <div class="flex justify-between py-4 border-b border-[#333]">
-                                <span class="text-white">• Wi-Fi Multimedia (WMM)
-</span>
-                            </div>
-                        </div>
-
-                        <div class="border-t border-[#333]">
-                            <div class="flex justify-between py-4 border-b border-[#333]">
-                                <span class="text-white">• TX/RX A-MPDU, TX/RX A-MSDU
-</span>
-                            </div>
-                        </div>
-
-                        <div class="border-t border-[#333]">
-                            <div class="flex justify-between py-4 border-b border-[#333]">
-                                <span class="text-white">• Immediate Block ACK
-</span>
-                            </div>
-                        </div>
-
-                        <div class="border-t border-[#333]">
-                            <div class="flex justify-between py-4 border-b border-[#333]">
-                                <span class="text-white">• Fragmentation and defragmentation
-</span>
-                            </div>
-                        </div>
-
-                         <div class="border-t border-[#333]">
-                            <div class="flex justify-between py-4 border-b border-[#333]">
-                                <span class="text-white">• Transmit opportunity (TXOP)
-</span>
-                            </div>
-                        </div>
-
-                         <div class="border-t border-[#333]">
-                            <div class="flex justify-between py-4 border-b border-[#333]">
-                                <span class="text-white">• Automatic Beacon monitoring (hardware TSF)
+                                <span class="text-white">• Voltage: Runs on 1.7V to 3.6V (typically 3.3V logic).
 </span>
                             </div>
                         </div>
@@ -212,139 +180,66 @@
 
                  
                     <div>
-                        <h3 class="text-4xl font-bold border-b-2 text-white mb-4">Bluetooth</h3>
+                        <h3 class="text-4xl font-bold border-b-2 text-white mb-4">Internal Peripherals (Connectivity)</h3>
                         <div class="border-t border-[#333]">
                             <div class="flex justify-between py-4 border-b border-[#333]">
-                                <span class="text-white">• Bluetooth LE: Bluetooth 5.3 certified
+                                <span class="text-white">• CAN Bus: Essential for automotive and industrial communication.
 </span>
                             </div> 
 
                             <div class="flex justify-between py-4 border-b border-[#333]">
-                                <span class="text-white">• High power mode (20 dBm)
+                                <span class="text-white">• SDIO: High-speed interface for reading MicroSD cards.
 </span>
                             </div> 
 
                             <div class="flex justify-between py-4 border-b border-[#333]">
-                                <span class="text-white">• Speed: 125 Kbps, 500 Kbps, 1 Mbps, 2 Mbps
+                                <span class="text-white">• DACs (Digital to Analog Converters) for generating audio signals.
 </span>
                             </div> 
 
                             <div class="flex justify-between py-4 border-b border-[#333]">
-                                <span class="text-white">• Advertising extensions
+                                <span class="text-white">• STM32CubeIDE: The official free software from ST. It uses C/C++ and the HAL (Hardware Abstraction Layer) library.
 </span>
                             </div> 
 
                             <div class="flex justify-between py-4 border-b border-[#333]">
-                                <span class="text-white">• Multiple advertisement sets
+                                <span class="text-white">• MicroPython: Because the F4 has plenty of RAM, it runs Python scripts very well for rapid prototyping.
 </span>
                             </div> 
 
                             <div class="flex justify-between py-4 border-b border-[#333]">
-                                <span class="text-white">• Channel selection algorithm #2
+                                <span class="text-white">• Arduino IDE: With the "STM32duino" core, you can program it just like an Arduino.
 </span>
-                            </div> 
-
-                            <div class="flex justify-between py-4 border-b border-[#333]">
-                                <span class="text-white">• Internal co-existence mechanism between Wi-Fi and Bluetooth to share the same antenna
-</span>
-                            </div> 
-
-                           
+                            </div>         
                         </div>
                     </div> 
 
 
                      <div>
-                        <h3 class="text-4xl font-bold border-b-2 text-white mb-4">CPU and Memory</h3>
+                        <h3 class="text-4xl font-bold border-b-2 text-white mb-4">Use the STM32F4 if your project involves:</h3>
                         <div class="border-t border-[#333]">
                             <div class="flex justify-between py-4 border-b border-[#333]">
-                                <span class="text-white">• 32-bit RISC-V single-core processor, up to 120 MHz
+                                <span class="text-white">• Audio: Audio filtering, synthesis, or recording.
 </span>
                             </div>
 
                             <div class="flex justify-between py-4 border-b border-[#333]">
-                                <span class="text-white">• 576 KB ROM
+                                <span class="text-white">• Flight Control: Drones (Quadcopters) require the fast floating-point math of the F4.
 </span>
                             </div>
 
                           <div class="flex justify-between py-4 border-b border-[#333]">
-                                <span class="text-white">• 272 KB SRAM (16 KB for cache)
+                                <span class="text-white">• Displays: Driving colorful TFT screens.
 </span>
                             </div>
 
                             <div class="flex justify-between py-4 border-b border-[#333]">
-                                <span class="text-white">• In-package flash (see details in Chapter 1 ESP8684 Series Comparison)
-</span>
-                            </div>
-
-                          <div class="flex justify-between py-4 border-b border-[#333]">
-                                <span class="text-white">• Access to flash accelerated by cache
+                                <span class="text-white">• High-Speed Sampling: Reading sensors faster than 100kHz.
 </span>
                             </div>
                         </div>
                     </div> 
-
-
-                    
-                     <div>
-                        <h3 class="text-4xl font-bold border-b-2 text-white mb-4">Power Management</h3>
-                        <div class="border-t border-[#333]">
-                            <div class="flex justify-between py-4 border-b border-[#333]">
-                                <span class="text-white">• 14 programmable GPIOs
-</span>
-                            </div>
-
-                            <div class="flex justify-between py-4 border-b border-[#333]">
-                                <span class="text-white">– Three SPI
-</span>
-                            </div>
-
-                            <div class="flex justify-between py-4 border-b border-[#333]">
-                                <span class="text-white">– 12-bit SAR ADC, up to 5 channels
-</span>
-                            </div>
-
-
-                          <div class="flex justify-between py-4 border-b border-[#333]">
-                                <span class="text-white">– 54-bit general-purpose timer
-</span>
-                            </div>
-                        </div>
-                    </div> 
-
-
-                  <div>
-                        <h3 class="text-4xl font-bold border-b-2 text-white mb-4">With low power consumption, ESP32 is an ideal choice for IoT devices in the following areas:</h3>
-                        <div class="border-t border-[#333]">
-                            <div class="flex justify-between py-4 border-b border-[#333]">
-                                <span class="text-white">• Smart Home</span>
-                            </div>
-
-                            <div class="flex justify-between py-4 border-b border-[#333]">
-                                <span class="text-white">• Industrial Automation</span>
-                            </div>
-
-                            <div class="flex justify-between py-4 border-b border-[#333]">
-                                <span class="text-white">• Health Care</span>
-                            </div>
-
-                             <div class="flex justify-between py-4 border-b border-[#333]">
-                                <span class="text-white">• Consumer Electronics</span>
-                            </div>
-
-                             <div class="flex justify-between py-4 border-b border-[#333]">
-                                <span class="text-white">• Smart Agriculture</span>
-                            </div>
-
-                             <div class="flex justify-between py-4 border-b border-[#333]">
-                                <span class="text-white">• POS Machines</span>
-                            </div>
-                        </div>
-                    </div> 
-
-
-
-                    
+     
                 </div>
             </main>
         </div>
