@@ -1,0 +1,252 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STM32F4</title>
+    <link rel="stylesheet" href="../style.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+       
+        :root {
+            --arduino-teal: #022223;
+        }
+        .bg-arduino-teal {
+            background-color: var(--arduino-teal);
+        }
+        .text-arduino-teal {
+            color: var(--arduino-teal);
+        }
+        
+        body {
+            font-family: 'Inter', 'Cairo', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-[#121212] text-[#e0e0e0]">
+
+    <div class="flex flex-col h-screen">
+        <header class="border-b bg-[#1e1e1e] border-[#333] shadow-sm sticky top-0 z-10">
+            <nav class="flex items-center justify-between h-16 px-4 md:px-6  main-nav">
+                
+                <div class="flex items-stretch h-full">
+                    <a href="STM32.html" class="flex items-center justify-center bg-arduino-teal px-4 text-white text-xl font-bold tracking-wider">
+                        STM32
+                    </a>
+                    
+                </div>
+
+                <div class="logo-container">
+            <img src="../img/logo.png">
+        </div>
+
+                <ul>
+                <li><a href="../">Ana Sayfa </a></li>
+                <li><a href="../">Hakkımızda </a></li>
+                <li><a href="../">İletişim </a></li>
+            </ul>
+            </nav>
+        </header>
+
+       
+        <div class="flex flex-1 overflow-hidden">
+
+            <aside class="w-64 bg-[#1e1e1e] border-l border-[#333] p-5 overflow-y-auto hidden md:block flex-shrink-0">
+
+                <h2 class="text-xl font-bold text-gray-100 mb-4">Legacy Documentation</h2>
+                
+                <nav>
+                    <ul>
+                        <li class="mb-2">
+                            <button class="flex items-center justify-between w-full font-semibold text-gray-300">
+                                Boards
+                               
+                            </button>
+                            <ul class="mt-2 ml-4 space-y-1 text-sm">
+                                <li>
+                                    <a href="STM32F4.html" class="block px-3 py-2 rounded-md bg-blue-900 text-blue-200 font-semibold">STM32F4</a>
+                                </li>
+                                <li>
+                                    <a href="STM32F1.html" class="block px-3 py-2 rounded-md text-gray-400 hover:bg-[#2a2a2a]">STM32F1</a>
+                                </li>
+                                <li>
+                                    <a href="STM32L1.html" class="block px-3 py-2 rounded-md text-gray-400 hover:bg-[#2a2a2a]">STM32L1</a>
+                                </li>
+                                <li>
+                                    <a href="STM32WB.html" class="block px-3 py-2 rounded-md text-gray-400 hover:bg-[#2a2a2a]">STM32WB</a>
+                                </li>
+                                <li>
+                                    <a href="STM32MP1.html" class="block px-3 py-2 rounded-md text-gray-400 hover:bg-[#2a2a2a] ">STM32MP1</a>
+                                </li>
+                                
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
+
+            
+            <main class="flex-1 p-8 md:p-12 overflow-y-auto" lang="en" dir="ltr">
+                <h1 class="text-4xl font-bold text-white mb-4">STM32F4</h1>
+                
+                <p class="text-lg text-gray-300 leading-relaxed mb-8">
+         The STM32F4 is a high-performance 32-bit microcontroller family developed by STMicroelectronics. It is built around the Arm® Cortex®-M4 processor core. 
+                    It is widely considered the "industry standard" for embedded projects that require more processing power than a basic Arduino but are not complex enough to require a full Linux computer (like a Raspberry Pi).
+                <figure class="max-w-3xl mx-auto mb-8">
+                    <img src="../imgSTM32F4/2.jpg" 
+                         alt="[صورة للوحة Arduino 101]" 
+                         class="w-full rounded-lg shadow-lg border border-[#333]">
+                    <figcaption class="text-center text-gray-500 mt-3">
+                 The heart of the STM32F4 is the Cortex-M4 core. This core has two distinct features that separate it from lower-end chips (like the F1 or F0):
+
+FPU (Floating Point Unit): It has hardware support for decimal numbers (floats). This means it can calculate math equations (like 3.14159 * x) extremely fast.
+
+DSP Instructions: It includes Digital Signal Processing instructions, making it excellent for audio processing and motor control.
+                    </figcaption>
+                </figure>
+
+
+
+                   <h3 class="py-4 px-1 text-white font-semibold border-arduino-teal">---</h3>
+                <a href="../imgSTM32F4/3.jpg" target="_blank">
+                <img src="../imgSTM32F4/3.jpg" >  
+            </a>
+
+                <h3 class="py-4 px-1 text-white font-semibold border-arduino-teal"> --- </h3>
+                <a href="../imgSTM32F4/4.jpg" target="_blank">
+                <img src="../imgSTM32F4/4.jpg" >  
+            </a>
+
+                <h3 class="py-4 px-1 text-white font-semibold border-arduino-teal">schematics TOP</h3>
+                <a href="../imgSTM32F4/5.png" target="_blank">
+                <img src="../imgSTM32F4/5.png" >  
+            </a>
+
+       
+                <nav class="flex space-x-8 border-b border-[#333] mb-6">
+                    <a href="#" class="py-4 px-1 text-white font-semibold border-b-2 border-arduino-teal">Tech Specs</a>
+                </nav>
+
+                <p class="text-gray-300 mb-10">Here you will find the technical specifications for the STM32F4</p>
+
+                
+                <div class="space-y-8">
+                    
+                    
+                    <div>
+                        <h3 class="text-2xl font-semibold text-white mb-4">Features</h3>
+                        <div class="border-t border-[#333]">
+                            <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-gray-400">Name</span>
+                                <span class="text-white">STM32F4</span>
+                            </div>
+                        </div>
+                    </div>
+                 
+                    <div>
+                        <h3 class="text-4xl font-bold border-b-2 text-white mb-4">Key Specifications</h3>
+                        <div class="border-t border-[#333]">
+                            <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">• Clock Speed: Ranges from 84 MHz up to 180 MHz.
+    </span>
+                            </div>
+                        </div>
+
+                          <div class="border-t border-[#333]">
+                            <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">• Flash Memory (Storage): From 128 KB up to 2 MB.
+                    </span>
+                            </div>
+                        </div>
+
+                           <div class="border-t border-[#333]">
+                            <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">• SRAM (RAM): From 64 KB up to 384 KB.
+</span>
+                            </div>
+                        </div>
+
+                        <div class="border-t border-[#333]">
+                            <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">• Voltage: Runs on 1.7V to 3.6V (typically 3.3V logic).
+</span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                               
+
+                 
+                    <div>
+                        <h3 class="text-4xl font-bold border-b-2 text-white mb-4">Internal Peripherals (Connectivity)</h3>
+                        <div class="border-t border-[#333]">
+                            <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">• CAN Bus: Essential for automotive and industrial communication.
+</span>
+                            </div> 
+
+                            <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">• SDIO: High-speed interface for reading MicroSD cards.
+</span>
+                            </div> 
+
+                            <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">• DACs (Digital to Analog Converters) for generating audio signals.
+</span>
+                            </div> 
+
+                            <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">• STM32CubeIDE: The official free software from ST. It uses C/C++ and the HAL (Hardware Abstraction Layer) library.
+</span>
+                            </div> 
+
+                            <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">• MicroPython: Because the F4 has plenty of RAM, it runs Python scripts very well for rapid prototyping.
+</span>
+                            </div> 
+
+                            <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">• Arduino IDE: With the "STM32duino" core, you can program it just like an Arduino.
+</span>
+                            </div>         
+                        </div>
+                    </div> 
+
+
+                     <div>
+                        <h3 class="text-4xl font-bold border-b-2 text-white mb-4">Use the STM32F4 if your project involves:</h3>
+                        <div class="border-t border-[#333]">
+                            <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">• Audio: Audio filtering, synthesis, or recording.
+</span>
+                            </div>
+
+                            <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">• Flight Control: Drones (Quadcopters) require the fast floating-point math of the F4.
+</span>
+                            </div>
+
+                          <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">• Displays: Driving colorful TFT screens.
+</span>
+                            </div>
+
+                            <div class="flex justify-between py-4 border-b border-[#333]">
+                                <span class="text-white">• High-Speed Sampling: Reading sensors faster than 100kHz.
+</span>
+                            </div>
+                        </div>
+                    </div> 
+     
+                </div>
+            </main>
+        </div>
+    </div>
+
+</body>
+</html>
+
+
+            
