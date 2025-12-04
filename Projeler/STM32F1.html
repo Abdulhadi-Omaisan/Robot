@@ -1,6 +1,5 @@
-
 <!DOCTYPE html>
-<html lang="ar" dir="ltr">
+<html lang="tr" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -30,12 +29,12 @@
     <div class="flex flex-col h-screen">
         <header class="border-b bg-[#1e1e1e] border-[#333] shadow-sm sticky top-0 z-10">
             <nav class="flex items-center justify-between h-16 px-4 md:px-6  main-nav">
-                
+               
                 <div class="flex items-stretch h-full">
                     <a href="STM32.html" class="flex items-center justify-center bg-arduino-teal px-4 text-white text-xl font-bold tracking-wider">
                         STM32
                     </a>
-                    
+                   
                 </div>
 
                 <div class="logo-container">
@@ -55,13 +54,13 @@
 
             <aside class="w-64 bg-[#1e1e1e] border-l border-[#333] p-5 overflow-y-auto hidden md:block flex-shrink-0">
 
-                <h2 class="text-xl font-bold text-gray-100 mb-4">Legacy Documentation</h2>
-                
+                <h2 class="text-xl font-bold text-gray-100 mb-4">Eski Dokümantasyon</h2>
+               
                 <nav>
                     <ul>
                         <li class="mb-2">
                             <button class="flex items-center justify-between w-full font-semibold text-gray-300">
-                                Boards
+                                Kartlar
                                
                             </button>
                             <ul class="mt-2 ml-4 space-y-1 text-sm">
@@ -74,30 +73,30 @@
                                 <li>
                                     <a href="STM32L1.html" class="block px-3 py-2 rounded-md text-gray-400 hover:bg-[#2a2a2a]">STM32L1</a>
                                 </li>
-                                
+                               
                                 <li>
                                     <a href="STM32MP1.html" class="block px-3 py-2 rounded-md text-gray-400 hover:bg-[#2a2a2a] ">STM32WB</a>
                                 </li>
-                                
+                               
                             </ul>
                         </li>
                     </ul>
                 </nav>
             </aside>
 
-            
-            <main class="flex-1 p-8 md:p-12 overflow-y-auto" lang="en" dir="ltr">
+           
+            <main class="flex-1 p-8 md:p-12 overflow-y-auto" lang="tr" dir="ltr">
                 <h1 class="text-4xl font-bold text-white mb-4">STM32F4</h1>
-                
+               
                 <p class="text-lg text-gray-300 leading-relaxed mb-8">
-       The STM32F1 is the foundational "Mainstream" series of microcontrollers from STMicroelectronics. 
-                    It was the first series to bring 32-bit performance to the mass market at a price point comparable to 8-bit microcontrollers (like the ATmega328 used in Arduino).
+       STM32F1, STMicroelectronics'in "Ana Akım" mikrodenetleyici serisinin temelini oluşturur.
+                    8 bitlik mikrodenetleyicilerle (Arduino'da kullanılan ATmega328 gibi) karşılaştırılabilir bir fiyat noktasında kitle pazarına 32 bitlik performans getiren ilk seridir.
                 <figure class="max-w-3xl mx-auto mb-8">
                     <img src="../imgSTM32F1/2.jpg" 
-                         alt="[صورة للوحة Arduino 101]" 
+                         alt="[Arduino 101 kartının resmi]" 
                          class="w-full rounded-lg shadow-lg border border-[#333]">
                     <figcaption class="text-center text-gray-500 mt-3">
-              The most famous specific chip in this family is the STM32F103C8T6, widely known as the heart of the "Blue Pill" development board.
+              Bu ailedeki en ünlü spesifik çip, "Blue Pill" geliştirme kartının kalbi olarak bilinen STM32F103C8T6'dır.
                     </figcaption>
                 </figure>
 
@@ -113,119 +112,119 @@
                 <img src="../imgSTM32F1/4.png" >  
             </a>
 
-              
+             
 
        
                 <nav class="flex space-x-8 border-b border-[#333] mb-6">
-                    <a href="#" class="py-4 px-1 text-white font-semibold border-b-2 border-arduino-teal">Tech Specs</a>
+                    <a href="#" class="py-4 px-1 text-white font-semibold border-b-2 border-arduino-teal">Teknik Özellikler</a>
                 </nav>
 
-                <p class="text-gray-300 mb-10">Here you will find the technical specifications for the STM32F1</p>
+                <p class="text-gray-300 mb-10">Burada STM32F1 için teknik özellikleri bulacaksınız</p>
 
-                
+               
                 <div class="space-y-8">
-                    
-                    
+                   
+                   
                     <div>
-                        <h3 class="text-2xl font-semibold text-white mb-4">Features</h3>
+                        <h3 class="text-2xl font-semibold text-white mb-4">Özellikler</h3>
                         <div class="border-t border-[#333]">
                             <div class="flex justify-between py-4 border-b border-[#333]">
-                                <span class="text-gray-400">Name</span>
+                                <span class="text-gray-400">İsim</span>
                                 <span class="text-white">STM32F1</span>
                             </div>
                         </div>
                     </div>
                  
                     <div>
-                        <h3 class="text-4xl font-bold border-b-2 text-white mb-4">Key Specifications</h3>
+                        <h3 class="text-4xl font-bold border-b-2 text-white mb-4">Temel Özellikler</h3>
                         <div class="border-t border-[#333]">
                             <div class="flex justify-between py-4 border-b border-[#333]">
-                                <span class="text-white">• Clock Speed: Ranges from 84 MHz up to 180 MHz.
+                                <span class="text-white">• Saat Hızı: 84 MHz ile 180 MHz arasında değişir.
     </span>
                             </div>
                         </div>
 
                           <div class="border-t border-[#333]">
                             <div class="flex justify-between py-4 border-b border-[#333]">
-                                <span class="text-white">• Flash Memory (Storage): From 128 KB up to 2 MB.
+                                <span class="text-white">• Flash Bellek (Depolama): 128 KB'dan 2 MB'a kadar.
                     </span>
                             </div>
                         </div>
 
                            <div class="border-t border-[#333]">
                             <div class="flex justify-between py-4 border-b border-[#333]">
-                                <span class="text-white">• SRAM (RAM): From 64 KB up to 384 KB.
+                                <span class="text-white">• SRAM (RAM): 64 KB'dan 384 KB'a kadar.
 </span>
                             </div>
                         </div>
 
                         <div class="border-t border-[#333]">
                             <div class="flex justify-between py-4 border-b border-[#333]">
-                                <span class="text-white">• Voltage: Runs on 1.7V to 3.6V (typically 3.3V logic).
+                                <span class="text-white">• Voltaj: 1.7V ile 3.6V arasında çalışır (genellikle 3.3V mantık).
 </span>
                             </div>
                         </div>
-                        
+                       
                     </div>
                                
 
                  
                     <div>
-                        <h3 class="text-4xl font-bold border-b-2 text-white mb-4">Internal Peripherals (Connectivity)</h3>
+                        <h3 class="text-4xl font-bold border-b-2 text-white mb-4">Dahili Çevre Birimleri (Bağlantı)</h3>
                         <div class="border-t border-[#333]">
                             <div class="flex justify-between py-4 border-b border-[#333]">
-                                <span class="text-white">• CAN Bus: Essential for automotive and industrial communication.
+                                <span class="text-white">• CAN Bus: Otomotiv ve endüstriyel iletişim için gereklidir.
 </span>
                             </div> 
 
                             <div class="flex justify-between py-4 border-b border-[#333]">
-                                <span class="text-white">• SDIO: High-speed interface for reading MicroSD cards.
+                                <span class="text-white">• SDIO: MicroSD kartları okumak için yüksek hızlı arayüz.
 </span>
                             </div> 
 
                             <div class="flex justify-between py-4 border-b border-[#333]">
-                                <span class="text-white">• DACs (Digital to Analog Converters) for generating audio signals.
+                                <span class="text-white">• DAC'ler (Dijital-Analog Dönüştürücüler) ses sinyalleri üretmek için.
 </span>
                             </div> 
 
                             <div class="flex justify-between py-4 border-b border-[#333]">
-                                <span class="text-white">• STM32CubeIDE: The official free software from ST. It uses C/C++ and the HAL (Hardware Abstraction Layer) library.
+                                <span class="text-white">• STM32CubeIDE: ST'nin resmi ücretsiz yazılımı. C/C++ ve HAL (Donanım Soyutlama Katmanı) kütüphanesini kullanır.
 </span>
                             </div> 
 
                             <div class="flex justify-between py-4 border-b border-[#333]">
-                                <span class="text-white">• MicroPython: Because the F4 has plenty of RAM, it runs Python scripts very well for rapid prototyping.
+                                <span class="text-white">• MicroPython: F4 bol miktarda RAM'e sahip olduğundan, hızlı prototipleme için Python komut dosyalarını çok iyi çalıştırır.
 </span>
                             </div> 
 
                             <div class="flex justify-between py-4 border-b border-[#333]">
-                                <span class="text-white">• Arduino IDE: With the "STM32duino" core, you can program it just like an Arduino.
+                                <span class="text-white">• Arduino IDE: "STM32duino" çekirdeği ile, bunu tıpkı bir Arduino gibi programlayabilirsiniz.
 </span>
-                            </div>         
+                            </div>          
                         </div>
                     </div> 
 
 
-                     <div>
-                        <h3 class="text-4xl font-bold border-b-2 text-white mb-4">Use the STM32F4 if your project involves:</h3>
+                      <div>
+                        <h3 class="text-4xl font-bold border-b-2 text-white mb-4">Projeniz şunları içeriyorsa STM32F4'ü kullanın:</h3>
                         <div class="border-t border-[#333]">
                             <div class="flex justify-between py-4 border-b border-[#333]">
-                                <span class="text-white">• Audio: Audio filtering, synthesis, or recording.
+                                <span class="text-white">• Ses: Ses filtreleme, sentezleme veya kayıt.
 </span>
                             </div>
 
                             <div class="flex justify-between py-4 border-b border-[#333]">
-                                <span class="text-white">• Flight Control: Drones (Quadcopters) require the fast floating-point math of the F4.
+                                <span class="text-white">• Uçuş Kontrolü: Dronlar (Quadcopterler), F4'ün hızlı kayan nokta matematiğini gerektirir.
 </span>
                             </div>
 
                           <div class="flex justify-between py-4 border-b border-[#333]">
-                                <span class="text-white">• Displays: Driving colorful TFT screens.
+                                <span class="text-white">• Ekranlar: Renkli TFT ekranları sürme.
 </span>
                             </div>
 
                             <div class="flex justify-between py-4 border-b border-[#333]">
-                                <span class="text-white">• High-Speed Sampling: Reading sensors faster than 100kHz.
+                                <span class="text-white">• Yüksek Hızlı Örnekleme: Sensörleri 100kHz'den daha hızlı okuma.
 </span>
                             </div>
                         </div>
@@ -238,6 +237,3 @@
 
 </body>
 </html>
-
-
-            
